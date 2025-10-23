@@ -4,7 +4,7 @@ const qaList = document.getElementById("qa-list");
 
 async function fetchUPSCNews() {
   try {
-    const response = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.upsc.gov.in/rss.xml");
+    const response = await fetch("https://rapid-dream-4bfc.adon2764.workers.dev/");
     const data = await response.json();
     const newsItems = data.items.slice(0, 10);
 
